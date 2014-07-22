@@ -1,27 +1,6 @@
 ParanoidAndroid
 ===============
 
-Submitting Patches
-------------------
-We're open source, and patches are always welcome!
-You can send patches by using these commands:
-
-    cd <workspace>
-    repo start <branch> AOSPA/<project>
-    cd <project>
-    git add -A
-    git commit -a
-    cd <workspace>
-    repo upload AOSPA/<project>
-
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-If you are going to make extra additions, just repeat steps (Don't repo start again), but instead of git commit -a
-use git commit --amend. Gerrit will recognize it as a new patchset.
-
-To view the status of your and others patches, visit [ParanoidAndroid Code Review](http://gerrit.paranoidandroid.co)
-
-
 Getting Started
 ---------------
 
@@ -30,10 +9,10 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the ParanoidAndroid trees, use a command like this:
 
-    repo init -u git://github.com/AOSPA-legacy/manifest.git -b kitkat
+    repo init -u git://github.com/anerikg/manifest.git -b kitkat
 
-Then to sync up:
+Then to sync up, use 50g ccache and build falcon:
 
-    repo sync
+    repo sync && prebuilts/misc/linux-x86/ccache/ccache -M 50G && . rom-build.sh falcon
 
 For information on how to build, check [Here](https://github.com/AOSPA/manifest)
