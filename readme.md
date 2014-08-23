@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the ParanoidAndroid trees, use a command like this:
 
-    repo init -u git://github.com/anerikg/manifest.git -b kitkat
+    repo init -u git://github.com/Paradox-PA/manifest.git -b kitkat
 
 Then to sync up, use 50g ccache and build falcon:
 
