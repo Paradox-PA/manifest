@@ -479,5 +479,6 @@
   </project>
 
   <project path="device/motorola/falcon" name="Paradox-PA/android_device_motorola_falcon" remote="github" revision="kitkat" />
+  <project path="device/lge/vs980" name="Paradox-PA/android_device_lge_vs980" remote="github" revision="kitkat" />
 
 </manifest>
